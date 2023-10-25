@@ -30,7 +30,7 @@ Route::middleware('auth')->group(function () {
 Route::get('/form', [formController::class, 'index']);
 Route::post('/form', [formController::class, 'store']);
 Route::get('/result', [formController::class, 'result']);
-Route::get('/showall', [formController::class, 'showAll']);
+// Route::get('/showall', [formController::class, 'showAll']);
 
 require __DIR__.'/auth.php';
 
