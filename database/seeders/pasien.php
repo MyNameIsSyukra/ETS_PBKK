@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
 class pasien extends Seeder
 {
     public function run()
@@ -13,14 +14,14 @@ class pasien extends Seeder
                 'nama' => 'Pasien Pertama',
                 'usia' => '30',
                 'status' => 'Lajang',
-                'tempat_tanggallahir' => 'Jakarta, 1993-05-15',
+                'tempat/tanggallahir' => 'Jakarta, 1993-05-15',
                 'foto' => 'pasien1.jpg',
             ],
             [
                 'nama' => 'Pasien Kedua',
                 'usia' => '45',
                 'status' => 'Menikah',
-                'tempat_tanggallahir' => 'Surabaya, 1980-08-20',
+                'tempat/tanggallahir' => 'Surabaya, 1980-08-20',
                 'foto' => 'pasien2.jpg',
             ],
             // Tambahkan data pasien lainnya di sini
