@@ -4,6 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+
 return new class extends Migration
 {
     /**
@@ -11,13 +12,13 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('pasiens', function (Blueprint $table) {
+        Schema::create('data_pasien', function (Blueprint $table) {
             $table->timestamps();
             $table->id();
-            $table->text('pasien');
-            $table->text('dokter');
+            $table->text('nama');
+            $table->text('usia');
             $table->text('status');
-            $table->float('suhu');
+            $table->text('tempat/tanggallahir');
             $table->string('foto'); 
         });
     }
@@ -27,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('pasiens');
+        Schema::dropIfExists('data_pasien');
     }
 };
